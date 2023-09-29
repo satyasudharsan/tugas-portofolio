@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Tailwind CSS</title>
+    <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Hero Section Start-->
+    <section id="home" class="pt-36">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-1/2 px-4">
+                    <h1 class="text-xl md:text-2xl lg:text-4xl font-bold text-dark mb-1">Halo Semua 👋,</h1>
+                    <p class="text-lg md:text-xl lg:text-2xl text-slate-500 font-medium mb-5">Saya Satya Sudharsan</p>
+                    <p class="text-lg text-slate-400 font-medium mb-10 leading-relaxed">Moto: Berusaha sampai tujuan tercapai. <span class="text-dark font-bold">Semangat!</span></p>
+                    <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
+                </div>
+                <div class="w-full lg:w-1/2 px-4 mt-10 lg:mt-0">
+                    <div class="relative">
+                        <img src="dist/satya.png" alt="Satya Sudharsan" class="max-w-full mx-auto" />
+                        <span class="absolute -bottom-20 -z-10 left-2 translate-x-2 md:scale-125">
+                            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#0ea5e9" d="M54.7,-18.2C62.9,7.6,56.2,37.8,38.4,50C20.7,62.3,-8.1,56.5,-28.5,41.3C-48.9,26,-60.8,1.2,-54.7,-21.8C-48.5,-44.7,-24.3,-65.8,-0.5,-65.6C23.2,-65.5,46.5,-44.1,54.7,-18.2Z" transform="translate(100 100)" scale="1.2" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End-->
+
+    <!-- About Section Start-->
+    <section id="about" class="bg-gray-100">
+        <header class="bg-blue-500 p-4">
+            <h1 class="text-white text-2xl font-semibold">Tentang Saya</h1>
+        </header>
+    
+        <!-- Page 2: Minat, Hobi, Dan Sekolah -->
+        <div class="container mx-auto p-8">
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <h2 class="text-2xl font-semibold">Minat, Hobi & Sekolah </h2>
+                <p>Saya berminat di pemrograman web tetapi saya masih belajar dan belum ahli.</p>
+                <p>Saya memiliki hobi di bidang olahraga yaitu Futsal dan Bulutangkis.</p>
+                <p>Saya Alumni SMA Negeri 2 Tabanan. </p>
+                <br>
+                <a href="#halaman-1" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Halaman Selanjutnya</a>
+            </br>
+            </div>
+        </div>
+    
+<!-- Page 3: Pengalaman Organisasi Dan Portofolio Project -->
+<div class="container mx-auto p-8 flex flex-wrap">
+    <div class="w-full lg:w-1/2 bg-white p-4 shadow-md rounded-lg">
+        <h2 class="text-2xl font-semibold">Pengalaman Organisasi & Portofolio Project </h2>
+        <p>Pengalaman Organisasi : 
+            <br> Anggota sie konsumsi pada acara Malam Keakrabaran Mahasiswa</br>
+        </p>
+        <br>
+        <a href="#halaman-2" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Halaman Selanjutnya</a>
+    </div>
+    <div class="w-full lg:w-1/2 bg-white p-4 shadow-md rounded-lg mt-4 lg:mt-0">
+        <!-- Tempat untuk menampilkan gambar piagam -->
+        <div id="piagam-container" class="hidden">
+            <img src="dist/piagam.png" alt="Piagam" class="max-w-full mx-auto" />
+        </div>
+    </div>
+</div>
+
+      <!-- Navigasi antar halaman -->
+      <script>
+        function tampilkanHalaman(halamanId) {
+            const halaman = document.querySelectorAll('.container');
+            halaman.forEach((h) => {
+                h.classList.add('hidden');
+            });
+            document.getElementById(halamanId).classList.remove('hidden');
+        }
+    </script>
+
+    </section>
+    <!-- About Section End-->
+</body>
+</html>
